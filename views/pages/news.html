@@ -1,0 +1,19 @@
+<div class="container-fluid">
+<div class="row">  
+<div class="col-sm-16">
+<h1 class="text-uppercase">News list</h1>  
+<div ng-controller="NewsCtrl">
+<ul>
+  <li ng-repeat="n in news">
+       <h4 class="text-info text-uppercase">{{n.title}}</h4>
+       <p><strong>{{n.intro}}</strong></p>
+       <p>{{n.content}}</p>
+       <hr>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+   
+   

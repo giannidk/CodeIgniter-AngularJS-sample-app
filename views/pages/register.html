@@ -1,0 +1,36 @@
+<div class="container-fluid" ng-controller="UserController">
+<div class="row">  
+<div class="col-sm-16">
+<h1>Register</h1>  
+
+<form novalidate class="form-horizontal" name="registerForm" ng-submit="register()">  
+<div class="form-group">
+  <label for="username" class="col-md-2 control-label">Username <span style="color: #cc0000">*</span></label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="username" ng-model="register.username" required>
+  </div>
+</div>
+<div class="form-group">
+  <label for="email" class="col-md-2 control-label">Email <span style="color: #cc0000">*</span></label>
+  <div class="col-md-10">
+    <input type="text" class="form-control" id="inputEmail" name="email" ng-model="register.email" ng-pattern="/^[a-zA-Z]+[a-zA-Z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
+  </div>      
+</div>
+<div class="form-group">
+  <label for="password" class="col-md-2 control-label">Password <span style="color: #cc0000">*</span></label>
+  <div class="col-md-10">
+    <input type="password" class="form-control" id="password" ng-model="register.password" required>        
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-md-10 col-md-offset-2">
+    <input type="submit" class="btn btn-primary btn-raised" ng-disabled="registerForm.$invalid" />
+  </div>
+</div>  
+</form>
+
+</div>
+</div>
+</div>
+   
+ 
