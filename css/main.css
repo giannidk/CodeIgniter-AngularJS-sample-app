@@ -1,0 +1,26 @@
+/* CSS Document */
+html{
+	position: relative;
+	min-height: 100%;
+}
+
+body { padding-top: 50px; padding-bottom: 70px; }
+
+.dashed{
+	border: 1px dashed red;
+}
+
+
+/* FOOTER */
+footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+footer .well{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* END FOOTER */
